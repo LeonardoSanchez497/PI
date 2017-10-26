@@ -1,0 +1,61 @@
+@model IEnumerable<PartyInvites.Models.GuestResponse>
+
+
+@{
+    ViewData["Title"] = "GuestList";
+}
+
+<h2>GuestList</h2>
+
+@if (Model.Count() == 0)
+{
+    <p>
+        Nobody has yet confirm that s/he will come to the party...
+    </p>
+    <a asp-action="Rspv">Respondez S'il Vous Plait</a>
+
+}
+else
+{
+    <p> Currently, @Model.Count() will coming to the party</p>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Will Attend </td>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var r in Model)
+        {
+            <tr>
+
+                <td>@r.Name </td>
+                <td>@r.EMail </td>   
+                <td>@r.Phone </td>
+                <td>
+                    @if (r.WillAttend == true)
+                    {
+                        @:Yes
+                    }
+                    else if (r.WillAttend == false)
+                    {
+                        @:No
+                     }
+                    else
+                    {
+                        @:Don't know
+                    }
+                </td>
+            </tr>
+
+
+        }
+
+
+    </tbody>
+</table>
+}

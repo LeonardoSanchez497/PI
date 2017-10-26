@@ -1,0 +1,67 @@
+@model PartyInvites.Models.GuestResponse
+
+@{
+
+    ViewData["Title"] = "Repondez S'il Vous Plait";
+
+}
+
+
+    <!-- Body -->
+    <form asp-action="Rspv" method="post">
+        <div class="panel panel-default" style="margin-top:2ex;">
+            <div class="panel-heading">
+                <h3 class="panel-title"> Respondez S'il Vous Plait </h3><!--Header-->
+            </div>
+
+            <div class="panel-body">
+                <table>
+                    <tr>
+                        <td>
+                            <label asp-for="Name">Name:</label>
+                        </td>
+                        <td>
+                            <input asp-for="Name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label asp-for="EMail"> Email:</label>
+                        </td>
+                        <td>
+                            <input asp-for="EMail" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label asp-for="Phone"> Phone:</label>
+                        </td>
+                        <td>
+                            <input asp-for="Phone" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right:1em;">
+                            <label asp-for="WillAttend">Will attend to the Party??</label>
+                        </td>
+                        <td>
+                            <select asp-for="WillAttend">
+                                <option value="">Choose an option</option>
+                                <option value="true">Yes i want chiks</option>
+                                <option value="false">Sry, i have my wife at home</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+                <div asp-validation-summary="All"></div>
+
+            </div>
+            <div class="panel-footer">
+
+                <button type="submit" class="btn btn-primary"> Submit response</button><!--footer-->
+            </div>
+        </div>
+</form>

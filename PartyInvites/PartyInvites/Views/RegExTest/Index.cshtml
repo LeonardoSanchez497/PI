@@ -1,0 +1,42 @@
+@model PartyInvites.Models.RegExTestData
+@{
+    ViewData["Title"] = "Regular Expression Test";
+}
+
+<h2>Regular Expression Test</h2>
+
+<form asp-action="Index" method="post">
+    <table>
+        <tr>
+            <td>
+                <label asp-for="PostalCode"> Postal Code</label>
+            </td>
+            <td>
+                <input asp-for="PostalCode" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="LicensePlate">License Plate</label>
+            </td>
+            <td>
+                <input asp-for="LicensePlate" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="PhoneNumber"> Phone Number</label>
+            </td>
+            <td>
+                <input asp-for="PhoneNumber" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="submit">Test regular Expression</button>
+            </td>
+        </tr>
+    </table>
+    <div asp-validation-summary="All"></div>
+</form>

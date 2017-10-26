@@ -1,0 +1,16 @@
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h2>Home</h2>
+
+
+<p>@ViewBag.Message World !!! </p>
+
+<p> We are going to have an exiting party</p>
+
+<a asp-action="Rspv"> Respondez S'il Vous Plait</a>  @*asp-action ajuda a criar hiperligações automaticas, mas parte do servidor e nao do programador*@
+@* o href nao é necessario visto que podemos modar as paginas de sitio ou coisa assim e depois temos que alterar*@
+<br />
+<a asp-action="GuestList"> See the Guest list</a>
