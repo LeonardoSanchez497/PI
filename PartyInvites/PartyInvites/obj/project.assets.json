@@ -10756,11 +10756,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "d:\\Users\\Leonardo Sanchez\\Documents\\Programação para Internet\\PartyInvites\\PartyInvites\\PartyInvites.csproj",
+      "projectUniqueName": "d:\\Users\\Leonardo Sanchez\\Documents\\GitHub\\PI\\PartyInvites\\PartyInvites\\PartyInvites.csproj",
       "projectName": "PartyInvites",
-      "projectPath": "d:\\Users\\Leonardo Sanchez\\Documents\\Programação para Internet\\PartyInvites\\PartyInvites\\PartyInvites.csproj",
+      "projectPath": "d:\\Users\\Leonardo Sanchez\\Documents\\GitHub\\PI\\PartyInvites\\PartyInvites\\PartyInvites.csproj",
       "packagesPath": "C:\\Users\\Leonardo Sanchez\\.nuget\\packages\\",
-      "outputPath": "d:\\Users\\Leonardo Sanchez\\Documents\\Programação para Internet\\PartyInvites\\PartyInvites\\obj\\",
+      "outputPath": "d:\\Users\\Leonardo Sanchez\\Documents\\GitHub\\PI\\PartyInvites\\PartyInvites\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Leonardo Sanchez\\AppData\\Roaming\\NuGet\\NuGet.Config",
