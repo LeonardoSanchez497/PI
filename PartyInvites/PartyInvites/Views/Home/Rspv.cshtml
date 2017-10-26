@@ -15,41 +15,51 @@
             </div>
 
             <div class="panel-body">
+                <div class="form-group">
+                    <label asp-for="Name">Name</label>
+                    <input asp-for="Name"class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="EMail"> Email:</label>
+                        <input asp-for="EMail" class="form-control" />
+
+</div>
+                <div class="form-group">
+                    <label asp-for="Phone"> Phone:</label>
+                     <input asp-for="Phone" class="form-control" />
+
+
+</div>
+                <div class="form-group">
+                    <label asp-for="WillAttend">Will attend to the Party??</label>
+                    <select asp-for="WillAttend" class="form-control">
+                            <option value="">Choose an option</option>
+                            <option value="true">Yes i want chiks</option>
+                            <option value="false">Sry, i have my wife at home</option>
+                     </select>
+
+
+</div>
                 <table>
                     <tr>
                         <td>
-                            <label asp-for="Name">Name:</label>
                         </td>
                         <td>
-                            <input asp-for="Name" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label asp-for="EMail"> Email:</label>
-                        </td>
-                        <td>
-                            <input asp-for="EMail" />
+                           
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label asp-for="Phone"> Phone:</label>
-                        </td>
-                        <td>
-                            <input asp-for="Phone" />
+                         
                         </td>
                     </tr>
                     <tr>
                         <td style="padding-right:1em;">
-                            <label asp-for="WillAttend">Will attend to the Party??</label>
-                        </td>
-                        <td>
-                            <select asp-for="WillAttend">
-                                <option value="">Choose an option</option>
-                                <option value="true">Yes i want chiks</option>
-                                <option value="false">Sry, i have my wife at home</option>
-                            </select>
+                            
                         </td>
                     </tr>
                     <tr>
